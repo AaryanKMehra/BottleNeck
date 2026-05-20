@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cutting Process Bottleneck Analyzer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="calculator-container">
+    <header>
+      <h2>Cutting Process Bottleneck Analyzer</h2>
+      <p>Identify the constraint in your workflow by calculating the maximum hourly throughput of each step.</p>
+    </header>
+
+    <section class="chart-container">
+      <canvas id="capacityChart"></canvas>
+    </section>
+
+    <section id="steps-container" class="steps-list">
+    </section>
+
+    <button id="add-btn" class="add-btn">+ Add Process Step</button>
+  </main>
+</body>
+</html>
